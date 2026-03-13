@@ -1,0 +1,89 @@
+# =============================================================================
+# .gitignore — school-ai-project
+# Stack: FastAPI (Python) + Next.js (TypeScript) + ML + Docker
+# =============================================================================
+
+# --- Python / FastAPI -------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.eggs/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.coverage
+.coverage
+htmlcov/
+*.log
+
+# --- Variabili d'ambiente (MAI su git) --------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+
+# --- ML Models (pesanti, usa git-lfs se necessario) -------------------------
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.pt
+*.pth
+*.onnx
+
+# --- Dati (file pesanti) ----------------------------------------------------
+data/*.csv
+data/*.pdf
+data/*.parquet
+data/*.xlsx
+# Eccezione: tieni i dataset piccoli di esempio
+!data/sample_*.csv
+
+# --- Next.js / Node ---------------------------------------------------------
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Docker -----------------------------------------------------------------
+# Non escludere docker-compose.yml — è parte del progetto
+# Escludi override locali
+docker-compose.override.yml
+docker-compose.local.yml
+
+# --- Database locali --------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+postgres-data/
+pgdata/
+
+# --- Editor -----------------------------------------------------------------
+.vscode/extensions.json   # Tieni settings.json, escludi suggerimenti personali
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Secrets / Chiavi -------------------------------------------------------
+*.pem
+*.key
+*.cert
+*.p12
+secrets/
+credentials/

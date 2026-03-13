@@ -1,0 +1,109 @@
+{
+  // ============================================================
+  // VS Code — AI Engineer Workspace Settings
+  // Posizione: ~/Developer/school-ai-project/.vscode/settings.json
+  // ============================================================
+
+  // --- Editor base --------------------------------------------
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'JetBrainsMono Nerd Font', 'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.rulers": [88],           // PEP8 per Python (black default)
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "off",
+  "editor.renderWhitespace": "boundary",
+
+  // --- Terminal -----------------------------------------------
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+
+  // --- File Explorer ------------------------------------------
+  "explorer.compactFolders": false,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    "**/.pytest_cache": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.mypy_cache": true,
+    "**/*.egg-info": true
+  },
+
+  // --- Python -------------------------------------------------
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.tabSize": 4,
+    "editor.rulers": [88]
+  },
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "mypy-type-checker.enabled": true,
+
+  // --- FastAPI / Ruff linting ---------------------------------
+  "ruff.enable": true,
+  "ruff.fixAll": true,
+  "ruff.organizeImports": true,
+
+  // --- TypeScript / Next.js -----------------------------------
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.suggest.autoImports": true,
+
+  // --- JSON / YAML / TOML -------------------------------------
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+
+  // --- Docker -------------------------------------------------
+  "docker.showStartPage": false,
+
+  // --- Git ----------------------------------------------------
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+
+  // --- Workbench ----------------------------------------------
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.startupEditor": "none",
+  "workbench.editor.tabSizing": "shrink",
+
+  // --- Jupyter ------------------------------------------------
+  "jupyter.askForKernelRestart": false,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+
+  // --- Estensioni specifiche ----------------------------------
+  "errorLens.enabled": true,
+  "errorLens.messageEnabled": true,
+  "githubCopilot.enable": {
+    "*": true
+  }
+}
