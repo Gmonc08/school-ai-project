@@ -10,7 +10,7 @@
   "editor.fontLigatures": true,
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.rulers": [88],           // PEP8 per Python (black default)
+  "editor.rulers": [88], // PEP8 per Python (black default)
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
@@ -51,7 +51,6 @@
   },
   "python.analysis.typeCheckingMode": "basic",
   "python.analysis.autoImportCompletions": true,
-  "mypy-type-checker.enabled": true,
 
   // --- FastAPI / Ruff linting ---------------------------------
   "ruff.enable": true,
@@ -102,8 +101,5 @@
 
   // --- Estensioni specifiche ----------------------------------
   "errorLens.enabled": true,
-  "errorLens.messageEnabled": true,
-  "githubCopilot.enable": {
-    "*": true
-  }
+  "errorLens.messageEnabled": true
 }
